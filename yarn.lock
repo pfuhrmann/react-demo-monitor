@@ -980,9 +980,9 @@
     loader-utils "^1.1.0"
 
 "@types/node@*":
-  version "11.11.4"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.11.4.tgz#8808bd5a82bbf6f5d412eff1c228d178e7c24bb3"
-  integrity sha512-02tIL+QIi/RW4E5xILdoAMjeJ9kYq5t5S2vciUdFPXv/ikFTb0zK8q9vXkg4+WAJuYXGiVT1H28AkD2C+IkXVw==
+  version "11.11.5"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-11.11.5.tgz#0c57e12eb44d44e5b6735593925286553ee7cebf"
+  integrity sha512-pz6wNe/XwyesgfVX7P6B0hY3TnTAYXk6KSTLdpQfbuq3be+hnMoCuFzE+yLTskPdBwmNiGRL2TAsnF09aRugvQ==
 
 "@types/q@^1.5.1":
   version "1.5.2"
@@ -7952,7 +7952,7 @@ prompts@^0.1.9:
     kleur "^2.0.1"
     sisteransi "^0.1.1"
 
-prop-types@^15.6.2:
+prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
@@ -8181,7 +8181,7 @@ react-error-overlay@^5.1.4:
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-5.1.4.tgz#88dfb88857c18ceb3b9f95076f850d7121776991"
   integrity sha512-fp+U98OMZcnduQ+NSEiQa4s/XMsbp+5KlydmkbESOw4P69iWZ68ZMFM5a2BuE0FgqPBKApJyRuYHR95jM8lAmg==
 
-react-is@^16.8.1:
+react-is@^16.8.1, react-is@^16.8.4:
   version "16.8.4"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.4.tgz#90f336a68c3a29a096a3d648ab80e87ec61482a2"
   integrity sha512-PVadd+WaUDOAciICm/J1waJaSvgq+4rHE/K70j0PFqKhkTBsPv/82UGQJNXAngz1fOQLLxI6z1sEDmJDQhCTAA==
@@ -8239,6 +8239,16 @@ react-scripts@2.1.8:
     workbox-webpack-plugin "3.6.3"
   optionalDependencies:
     fsevents "1.2.4"
+
+react-test-renderer@^16.8.4:
+  version "16.8.4"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.8.4.tgz#abee4c2c3bf967a8892a7b37f77370c5570d5329"
+  integrity sha512-jQ9Tf/ilIGSr55Cz23AZ/7H3ABEdo9oy2zF9nDHZyhLHDSLKuoILxw2ifpBfuuwQvj4LCoqdru9iZf7gwFH28A==
+  dependencies:
+    object-assign "^4.1.1"
+    prop-types "^15.6.2"
+    react-is "^16.8.4"
+    scheduler "^0.13.4"
 
 react@^16.8.4:
   version "16.8.4"
