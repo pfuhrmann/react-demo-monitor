@@ -13,7 +13,7 @@
   }
 
   &-box {
-    padding: 1.5em;
+    padding: 2em;
     border-radius: $border-radius;
     box-shadow: $shadow;
     background-color: $color-white;
@@ -22,11 +22,12 @@
   }
 
   &-category {
-    padding-right: 1.5em;
+    padding-right: 3em;
+    flex-shrink: 0;
   }
 
   &-form {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
   }
 }

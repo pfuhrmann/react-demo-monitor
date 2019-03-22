@@ -8,10 +8,12 @@ const TextSubHeader = ({ children, className }) => (
 
 TextSubHeader.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
 };
 
 TextSubHeader.defaultProps = {
   children: '',
+  className: '',
 };
 
 export default TextSubHeader;

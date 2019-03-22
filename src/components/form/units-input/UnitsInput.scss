@@ -1,0 +1,27 @@
+@import "../../../variables.scss";
+
+.Form-units-input {
+  display: flex;
+  align-items: center;
+  margin-right: 1.5em;
+
+  input {
+    display: flex;
+    height: 2.5em;
+    padding-left: 0.5em;
+    margin-right: 0.75em;
+    font-size: inherit;
+    color: inherit;
+    outline: none;
+    vertical-align: middle;
+    border: 1px solid $color-gray80;
+    border-radius: $border-radius;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    font-family: inherit;
+
+    &:hover, &:focus, &:active {
+      border-color: $color-mariner;
+    }
+  }
+}

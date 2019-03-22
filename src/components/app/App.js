@@ -5,6 +5,9 @@ import TextHeader from '../text/header/TextHeader';
 import TextMain from '../text/main/TextMain';
 import Label from '../form/label/Label';
 import TextSubHeader from '../text/sub-header/TextSubHeader';
+import UnitsInput from '../form/units-input/UnitsInput';
+import InputGroup from '../form/input-group/InputGroup';
+import Button from '../form/button/Button';
 
 const App = () => (
   <div className="App">
@@ -14,19 +17,17 @@ const App = () => (
       <div className="App-box">
         <div className="App-form">
           <TextSubHeader className="App-category">Blood pressure</TextSubHeader>
-          <div className="form-group">
+          <InputGroup>
             <Label htmlFor="sys">Systolic</Label>
-            <input type="text" id="sys" /> mmHg
-          </div>
-          <div className="form-group">
+            <UnitsInput type="text" id="sys" units="mmHg" onChange={()=>{}} />
+          </InputGroup>
+          <InputGroup>
             <Label htmlFor="dia">Diastolic</Label>
-            <input type="text" id="dia" /> mmHg
-          </div>
-          <button>Add measurement</button>
+            <UnitsInput type="text" id="dia" units="mmHg" onChange={()=>{}} />
+          </InputGroup>
+          <Button>Add measurement</Button>
         </div>
-        <div className="App-results">
-          Results
-        </div>
+
       </div>
     </div>
   </div>
