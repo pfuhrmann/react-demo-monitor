@@ -10,16 +10,23 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: $color-white;
   }
 
   &-box {
-    color: $color-gulf-blue;
     padding: 1.5em;
-    font-size: 0.875rem;
     border-radius: $border-radius;
     box-shadow: $shadow;
     background-color: $color-white;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-category {
+    padding-right: 1.5em;
+  }
+
+  &-form {
+    display: flex;
+    align-items: center;
   }
 }

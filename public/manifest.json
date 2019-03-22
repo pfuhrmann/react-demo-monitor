@@ -1,6 +1,6 @@
 {
   "short_name": "Monitor",
-  "name": "Your intuitive health tracker",
+  "name": "Your simple health tracker",
   "icons": [
     {
       "src": "favicon.ico",
@@ -10,6 +10,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#3779ED",
+  "background_color": "#FAFBFB"
 }

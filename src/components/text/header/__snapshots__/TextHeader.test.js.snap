@@ -1,7 +1,0 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
-
-exports[`renders correctly h2 tag with text 1`] = `
-<h2>
-  Header
-</h2>
-`;
