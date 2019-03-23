@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly h1 tag with text 1`] = `
-<h1>
+<h2
+  className=""
+>
   Header
-</h1>
+</h2>
 `;

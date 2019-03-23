@@ -14,6 +14,7 @@
 
   &-box {
     padding: 2em;
+    margin-top: 2em;
     border-radius: $border-radius;
     box-shadow: $shadow;
     background-color: $color-white;
@@ -29,5 +30,28 @@
   &-form {
     display: flex;
     align-items: flex-end;
+  }
+
+  &-results {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    .App-box {
+      margin-right: 2em;
+    }
+
+    .App-data {
+      display: flex;
+      padding-bottom: 2.5em;
+
+      div {
+        display: flex;
+        flex-direction: column;
+        margin: 0 1.5em;
+        align-self: center;
+      }
+    }
   }
 }

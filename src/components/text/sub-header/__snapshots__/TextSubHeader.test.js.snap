@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`renders correctly h3 tag with text 1`] = `
-<h3
+<h2
   className=""
 >
   Header
-</h3>
+</h2>
 `;
 
 exports[`renders correctly with custom class 1`] = `
-<h3
+<h2
   className="test-class"
 >
   Header
-</h3>
+</h2>
 `;
