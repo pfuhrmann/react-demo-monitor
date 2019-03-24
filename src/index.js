@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import './index.scss';
 import App from './components/app/App';
 import * as serviceWorker from './serviceWorker';
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faSortUp, faSortDown } from '@fortawesome/free-solid-svg-icons'
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
@@ -10,3 +12,5 @@ ReactDOM.render(<App />, document.getElementById('root'));
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 serviceWorker.unregister();
+
+library.add(faSortUp, faSortDown);

@@ -2,7 +2,7 @@ import React, { useState, useReducer } from 'react';
 import dayjs from 'dayjs';
 
 import './App.scss';
-import { makeId } from '../../helpers';
+import { getDataIcon, makeId } from '../../helpers';
 import TextHeader from '../text/header/TextHeader';
 import TextMain from '../text/main/TextMain';
 import Label from '../form/label/Label';
@@ -20,9 +20,11 @@ const App = () => {
   const [diaInput, setDiaInput] = useState('');
 
   const [results, dispatch] = useReducer((results, { type, value }) => {
+    const num = parseInt(value, 10);
+    console.log(results);
     switch (type) {
       case ACTION_ADD:
-        return [...results, value];
+        return [value, ...results];
       case ACTION_REMOVE:
         return results.filter((_, index) => index !== value);
       default:
@@ -49,7 +51,7 @@ const App = () => {
           <Label htmlFor="sys">Systolic</Label>
           <UnitsInput
             value={sysInput}
-            onChange={e => setSysInput(e.target.value)}
+            onChange={e => setSysInput(parseInt(e.target.value, 10))}
             id="sys"
             units="mmHg"
           />
@@ -58,7 +60,7 @@ const App = () => {
           <Label htmlFor="dia">Diastolic</Label>
           <UnitsInput
             value={diaInput}
-            onChange={e => setDiaInput(e.target.value)}
+            onChange={e => setDiaInput(parseInt(e.target.value))}
             id="dia"
             units="mmHg"
           />
@@ -70,15 +72,22 @@ const App = () => {
 
   const renderResults = () => (
     <div className="App-results">
-      {results.map(({ sysInput, diaInput, created, id }, index) => (
+      {results.map(({ sysInput, diaInput, created, id }, index, arr) => (
         <Result
           key={id}
           created={created}
           data={[
-            { label: 'Sys', value: sysInput },
-            { label: 'Dia', value: diaInput },
+            {
+              label: 'Sys.',
+              value: sysInput,
+              icon: getDataIcon(sysInput, arr[index+1] && arr[index+1].sysInput),
+            }, {
+              label: 'Dia.',
+              value: diaInput,
+              icon: getDataIcon(diaInput, arr[index+1] && arr[index+1].diaInput),
+            },
           ]}
-          onClick={() => dispatch({ type: ACTION_REMOVE, value: index })} />
+          onRemove={() => dispatch({ type: ACTION_REMOVE, value: index })} />
       ))}
     </div>
   );

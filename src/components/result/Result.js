@@ -8,16 +8,21 @@ import Label from '../form/label/Label';
 import Button from '../form/button/Button';
 
 const Result = ({ data, created, onRemove }) => (
-  <div className="App-box">
-    <TextSubHeader>
-      { dayjs(created).format('YYYY-MM-DD (HH:mm)') }
-    </TextSubHeader>
-    <div className="App-data">
-      {data.map(({ label, value }) => (
-        <div key={label}><Label>{label}</Label> {value} mmHg</div>
-      ))}
+  <div className="Result">
+    <div className="App-box">
+      <TextSubHeader>
+        { dayjs(created).format('YYYY-MM-DD (HH:mm)') }
+      </TextSubHeader>
+      <div className="Result-data">
+        {data.map(({ label, value, icon }) => (
+          <div key={label}>
+            <Label>{label}</Label>
+            <span>{value} mmHg {icon}</span>
+          </div>
+        ))}
+      </div>
+      <Button as="link" onClick={onRemove}>Remove</Button>
     </div>
-    <Button as="link" onClick={() => onRemove}>Remove</Button>
   </div>
 );
 

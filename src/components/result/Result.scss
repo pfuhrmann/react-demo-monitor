@@ -1,40 +1,23 @@
 @import "../../variables.scss";
 
-.Form-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.75em;
-  font-size: inherit;
-  font-weight: $font-weight-semi-bold;
-  background-color: $color-royal-blue;
-  color: $color-white;
-  border-width: 0;
-  border-radius: $border-radius;
-  width: 100% !important;
-  vertical-align: middle;
-  font-family: inherit;
-  outline: none;
-  padding: 0 1em;
-
-  &:hover {
-    background-color: $color-mariner;
-    cursor: pointer;
+.Result {
+  .App-box {
+    margin-right: 2em;
   }
 
-  &-link {
-    color: $color-royal-blue;
-    cursor: pointer;
-    background:none!important;
-    border:none;
-    padding:0!important;
-    font: inherit;
-    outline: none;
-    width: max-content;
+  &-data {
+    display: flex;
+    padding-bottom: 2.5em;
 
-    &:hover {
-      text-decoration: underline;
-      color: $color-mariner;
+    div {
+      display: flex;
+      flex-direction: column;
+      margin: 0 1.5em;
+      align-self: center;
+    }
+
+    svg {
+      align-self: center;
     }
   }
 }
