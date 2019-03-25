@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders component correctly 1`] = `
+<div
+  className="Result"
+>
+  <div
+    className="App-box"
+  >
+    <h2
+      className=""
+    >
+      2018-08-08 (00:00)
+    </h2>
+    <div
+      className="Result-data"
+    >
+      <div>
+        <label>
+          val
+        </label>
+        <span>
+          val
+           
+        </span>
+      </div>
+      <div>
+        <label>
+          val2
+        </label>
+        <span>
+          val2
+           
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-sort-up fa-w-10 "
+            data-icon="sort-up"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 320 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M279 224H41c-21.4 0-32.1-25.9-17-41L143 64c9.4-9.4 24.6-9.4 33.9 0l119 119c15.2 15.1 4.5 41-16.9 41z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </span>
+      </div>
+    </div>
+    <button
+      className="Form-btn-link"
+      onClick={[Function]}
+    >
+      Remove
+    </button>
+  </div>
+</div>
+`;

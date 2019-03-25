@@ -2,10 +2,9 @@
 Your simple health tracker
 
 ### Implementation notes
-- Project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-- Used react hooks to manage state
-- Used Sass instead of vanilla CSS
-- Folder structure is following grouping of component resources in same folder (JS, tests, sass)
+- Used react hooks to manage component's state
+- Utilized Sass instead of vanilla CSS
+- Folder structure is following grouping of component resources in the same folder
 
 ### Requirements
 - `yarn` (or `npm`)

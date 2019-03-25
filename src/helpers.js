@@ -18,3 +18,13 @@ export const getDataIcon = (data, prevData) => {
   }
   return null;
 }
+
+export const parseIntInput = value => {
+  const parsed = parseInt(value, 10);
+  return !isNaN(parsed) ? parsed : '';
+}
+
+export const getAverage = (arr, key) => {
+  const a = arr.reduce((r, c) => r + c[key], 0) / arr.length;
+  return !isNaN(a) ? a : 'N/A';
+}

@@ -17,7 +17,7 @@ const Result = ({ data, created, onRemove }) => (
         {data.map(({ label, value, icon }) => (
           <div key={label}>
             <Label>{label}</Label>
-            <span>{value} mmHg {icon}</span>
+            <span>{value} {icon}</span>
           </div>
         ))}
       </div>

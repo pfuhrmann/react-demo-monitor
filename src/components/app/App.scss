@@ -32,6 +32,22 @@
     align-items: flex-end;
   }
 
+  &-average {
+    flex-direction: row;
+
+    h2 {
+      margin-right: 2em;
+      padding-bottom: 0.5em;
+      align-self: flex-end;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      margin-right: 2em;
+    }
+  }
+
   &-results {
     display: flex;
     flex-wrap: wrap;
